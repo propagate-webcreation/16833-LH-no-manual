@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="hb-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1820"/>
+      <stop offset="55%" stop-color="#11212d"/>
+      <stop offset="100%" stop-color="#1a3140"/>
+    </linearGradient>
+    <linearGradient id="hb-mtn1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d3344"/>
+      <stop offset="100%" stop-color="#0e1d27"/>
+    </linearGradient>
+    <linearGradient id="hb-mtn2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27465b"/>
+      <stop offset="100%" stop-color="#162a37"/>
+    </linearGradient>
+    <radialGradient id="hb-light" cx="78%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#f4efe6" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#f4efe6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#f4efe6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hb-grain" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="0.5" fill="#f4efe6" fill-opacity="0.05"/>
+    </pattern>
+    <pattern id="hb-lines" x="0" y="0" width="160" height="160" patternUnits="userSpaceOnUse">
+      <path d="M0 80 H160" stroke="#f4efe6" stroke-opacity="0.025" stroke-width="1"/>
+      <path d="M80 0 V160" stroke="#f4efe6" stroke-opacity="0.025" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#hb-sky)"/>
+  <rect width="1600" height="900" fill="url(#hb-light)"/>
+  <rect width="1600" height="900" fill="url(#hb-lines)"/>
+
+  <path d="M0 720 L120 660 L240 690 L360 600 L520 670 L640 620 L780 690 L900 640 L1040 700 L1180 650 L1320 690 L1460 640 L1600 680 L1600 900 L0 900 Z" fill="url(#hb-mtn2)" opacity="0.85"/>
+  <path d="M0 780 L100 740 L240 770 L380 720 L520 760 L660 730 L800 770 L940 740 L1080 770 L1220 730 L1360 770 L1500 740 L1600 760 L1600 900 L0 900 Z" fill="url(#hb-mtn1)"/>
+
+  <g opacity="0.5">
+    <circle cx="1240" cy="200" r="2" fill="#f4efe6"/>
+    <circle cx="1320" cy="160" r="1.5" fill="#f4efe6"/>
+    <circle cx="1180" cy="240" r="1" fill="#f4efe6"/>
+    <circle cx="1420" cy="220" r="1.5" fill="#f4efe6"/>
+    <circle cx="1100" cy="180" r="1" fill="#f4efe6"/>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#hb-grain)"/>
+</svg>

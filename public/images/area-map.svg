@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="am-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4efe6"/>
+      <stop offset="100%" stop-color="#e6dcc6"/>
+    </linearGradient>
+    <radialGradient id="am-sea" cx="20%" cy="80%" r="80%">
+      <stop offset="0%" stop-color="#bcd0db" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#bcd0db" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="am-grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.4" fill="#11212d" fill-opacity="0.06"/>
+    </pattern>
+    <pattern id="am-contour" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0 20 Q10 10 20 20 T40 20" fill="none" stroke="#11212d" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#am-bg)"/>
+  <rect width="800" height="600" fill="url(#am-contour)"/>
+  <rect width="800" height="600" fill="url(#am-sea)"/>
+
+  <!-- Coastline / land mass -->
+  <path d="M40 80 Q120 60 200 90 Q300 70 380 100 Q460 80 540 120 Q620 100 700 140 Q760 170 760 240 Q740 320 700 360 Q660 420 580 440 Q500 470 420 460 Q340 480 280 460 Q200 470 140 440 Q80 410 60 340 Q40 260 40 180 Z"
+        fill="#d6c8a8" stroke="#11212d" stroke-opacity="0.45" stroke-width="1.5"/>
+
+  <!-- Inner shading -->
+  <path d="M120 160 Q220 140 320 170 Q440 150 520 200 Q600 190 660 240 Q680 290 640 330 Q580 380 480 380 Q380 400 280 380 Q200 380 160 340 Q120 280 120 160 Z"
+        fill="#e6dcc6" fill-opacity="0.7"/>
+
+  <!-- Mountains (Kirishima) -->
+  <g fill="#11212d" fill-opacity="0.55">
+    <path d="M340 220 L380 160 L420 220 Z"/>
+    <path d="M400 240 L450 170 L500 240 Z"/>
+    <path d="M460 230 L510 180 L560 230 Z"/>
+  </g>
+
+  <!-- Roads / rivers -->
+  <g stroke="#11212d" stroke-opacity="0.3" fill="none" stroke-width="1">
+    <path d="M120 280 Q260 300 420 290 T700 280" stroke-dasharray="4 3"/>
+    <path d="M280 140 Q320 240 380 320 T460 460"/>
+  </g>
+
+  <!-- Locations -->
+  <g font-family="serif" font-size="13" fill="#11212d">
+    <!-- 霧島市 (main) -->
+    <circle cx="430" cy="250" r="14" fill="#8c2a2a" stroke="#f4efe6" stroke-width="3"/>
+    <text x="452" y="246" font-size="16" font-weight="700">霧島市</text>
+    <text x="452" y="262" font-size="9" font-family="Inter, sans-serif" fill-opacity="0.7">KIRISHIMA</text>
+
+    <!-- 姶良市 -->
+    <circle cx="320" cy="320" r="6" fill="#11212d"/>
+    <text x="280" y="345" font-size="12">姶良市</text>
+
+    <!-- 湧水町 -->
+    <circle cx="540" cy="200" r="6" fill="#11212d"/>
+    <text x="552" y="196" font-size="12">湧水町</text>
+
+    <!-- 鹿児島市北部 -->
+    <circle cx="220" cy="380" r="6" fill="#11212d"/>
+    <text x="120" y="396" font-size="12">鹿児島市北部</text>
+  </g>
+
+  <!-- Compass -->
+  <g transform="translate(700 480)">
+    <circle cx="0" cy="0" r="28" fill="#f4efe6" stroke="#11212d" stroke-opacity="0.5"/>
+    <path d="M0 -22 L6 0 L0 22 L-6 0 Z" fill="#8c2a2a"/>
+    <text x="0" y="-32" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#11212d">N</text>
+  </g>
+
+  <!-- Title -->
+  <g transform="translate(60 540)" font-family="Inter, sans-serif" fill="#11212d">
+    <text font-size="10" letter-spacing="2" fill-opacity="0.6">SERVICE AREA</text>
+    <text y="18" font-size="14" font-weight="600">霧島市 &amp; 周辺市町</text>
+  </g>
+
+  <rect width="800" height="600" fill="url(#am-grain)"/>
+</svg>

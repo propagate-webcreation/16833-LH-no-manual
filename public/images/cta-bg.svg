@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1820"/>
+      <stop offset="50%" stop-color="#11212d"/>
+      <stop offset="100%" stop-color="#1c3849"/>
+    </linearGradient>
+    <radialGradient id="cb-warm" cx="80%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#8c2a2a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8c2a2a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cb-cool" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#3a5566" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#3a5566" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="cb-grain" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="0.4" fill="#f4efe6" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#cb-bg)"/>
+  <rect width="1600" height="900" fill="url(#cb-cool)"/>
+  <rect width="1600" height="900" fill="url(#cb-warm)"/>
+  <g opacity="0.1" fill="#f4efe6">
+    <text x="80" y="780" font-family="serif" font-size="220" font-weight="900" fill-opacity="0.06">CONTACT</text>
+  </g>
+  <rect width="1600" height="900" fill="url(#cb-grain)"/>
+</svg>

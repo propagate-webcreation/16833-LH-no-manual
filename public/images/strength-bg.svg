@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="stb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1820"/>
+      <stop offset="100%" stop-color="#172d3e"/>
+    </linearGradient>
+    <radialGradient id="stb-glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#f4efe6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f4efe6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="stb-grain" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="0.4" fill="#f4efe6" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#stb-bg)"/>
+  <rect width="1600" height="900" fill="url(#stb-glow)"/>
+  <g opacity="0.12" stroke="#f4efe6" stroke-width="1" fill="none">
+    <path d="M0 600 Q200 580 400 600 T800 600 T1200 600 T1600 600"/>
+    <path d="M0 640 Q200 620 400 640 T800 640 T1200 640 T1600 640"/>
+    <path d="M0 680 Q200 660 400 680 T800 680 T1200 680 T1600 680"/>
+    <path d="M0 720 Q200 700 400 720 T800 720 T1200 720 T1600 720"/>
+    <path d="M0 760 Q200 740 400 760 T800 760 T1200 760 T1600 760"/>
+  </g>
+  <g opacity="0.18" fill="#f4efe6">
+    <text x="100" y="200" font-family="serif" font-size="280" font-weight="900" fill-opacity="0.04">霧島</text>
+  </g>
+  <rect width="1600" height="900" fill="url(#stb-grain)"/>
+</svg>

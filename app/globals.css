@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&family=Inter:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', system-ui, sans-serif;
+  color: #11212D;
+  background-color: #F4EFE6;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+@media (min-width: 768px) {
+  body { font-size: 17px; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif JP', Georgia, serif;
+  text-wrap: balance;
+  word-break: auto-phrase;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+p, li, dd, dt {
+  text-wrap: pretty;
+  word-break: auto-phrase;
+  line-height: 1.85;
+}
+
+.font-num { font-family: Inter, system-ui, sans-serif; font-feature-settings: "tnum"; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
